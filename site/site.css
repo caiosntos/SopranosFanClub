@@ -13,17 +13,6 @@ header {
     box-sizing: border-box;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 60px;
-    width: auto;
-}
-
-
 header img {
     height: 50px;
     width: 170px;
