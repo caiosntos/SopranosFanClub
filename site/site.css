@@ -13,10 +13,10 @@
     padding-inline: 16px;
   }
 
-  .header img {
+  .header img { 
     height: 50px;
     width: 170px;
-    margin: 10px;
+    float: left;
   }
 
   .nav {
@@ -40,11 +40,14 @@
     color: black    ;
     padding-block: 16px;
   }
-  
+
+  .nav-list a:hover {
+    color: #ed174c
+}
 
 section {
     clear: both;
-    min-height: 550px;
+    min-height: 620px;
     width: 100%;
     margin-top: 0px;
 }
