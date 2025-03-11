@@ -1,60 +1,50 @@
-body {
-    font-family: "Century Gothic", sans-serif;
-    margin: 0 auto;
-}
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    font-family: sans-serif;
+    text-decoration: none;
+  }
+  
+  .header {
+    background: white;
+    padding-inline: 16px;
+  }
 
-header {
+  .header img {
+    height: 50px;
+    width: 170px;
+    margin: 10px;
+  }
+
+  .nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    border-bottom: 1px solid #e0e0e0;
-    box-sizing: border-box;
-}
+  }
 
-header img {
-    height: 50px;
-    width: 170px;
-    margin: 10px;
-}
-
-nav {
+  .nav-list {
     display: flex;
-    align-items: center;
-}
-
-nav .opcao {
-    height: 50px;
-    width: 170px;
-    margin: 10px;
-}
-
-nav ul {
-    display: flex;
+    gap: 32px;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 14px;
-    display: inline-block;
-    padding: 5px 10px;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ed174c
-}
+  }
+  
+  .nav-list a {
+    font-size: 18px;
+    color: black    ;
+    padding-block: 16px;
+  }
+  
 
 section {
     clear: both;
-    min-height: 525px;
+    min-height: 550px;
     width: 100%;
     margin-top: 0px;
 }
