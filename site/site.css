@@ -20,6 +20,9 @@ html, body {
   padding-inline: 16px;
 }
 
+input[type="checkbox"]{
+  font-size: small;
+}
 .header img { 
   height: 50px;
   width: 170px;
@@ -224,20 +227,77 @@ h1 {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-} 
+}
+
+.faleConosco input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  gap: 8px;
+}
+
+.faleConosco label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
 .faleConosco textarea{
   height: 120px;
   resize: none;
 }
 
-.faleConosco button{
+.faleConosco button {
+  outline: none;
+  height: 40px;
+  text-align: center;
   width: 30%;
   margin: 0 10%;
-  background-color: #ed174c;
+  border-radius: 40px;
+  background: #fff;
+  border: 2px solid #ed174c; 
+  color: #ed174c; 
+  letter-spacing: 1px;
+  text-shadow: none;
+  font-size: 16px; 
   font-weight: bold;
-  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }
+
+.faleConosco button[disabled] {
+  opacity: 0.4;
+}
+
+button:hover {
+  color: white;
+  background: #ed174c; 
+}
+
+button:active {
+  letter-spacing: 2px;
+}
+
+.onclic {
+  width: 40px;
+  border-color: #808080; 
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #ed174c; 
+  animation: rotating 2s 0.25s linear infinite;
+}
+
+.onclic:hover {
+  color: #ed174c;
+  background: white;
+}
+
+.validate {
+  font-size: 13px;
+  color: white;
+  background: #ed174c;
+}
+
 
 h2{
    text-align: center;

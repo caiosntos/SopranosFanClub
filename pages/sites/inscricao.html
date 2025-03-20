@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../site/site.css">
+    <script src="../../js/app.js"></script>
     <title>The Sopranos Fan-Club</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
         <section>
           <h2>Increva-se para acompanhar mais sobre The Sopranos!</h2>
           <p>Assine nosso NewsLetter para receber mais informações!</p>
-          <form name="frmfaleconosco" method="post"  action="#">
+          <form name="frmfaleconosco" method="post"  action="#" onsubmit="return validaFaleConosco()">
             <fieldset class="faleConosco">
               <legend>Dados Pessoais:</legend>
               <label for="nome">Nome:</label>
@@ -29,19 +30,21 @@
               <input type="text" name="txtfone" id="fone">
               <label for="email">E-mail:</label>
               <input type="email" name="txtemail" id="email">
+              <label>
+                <input type="checkbox" id="butao" onclick="enable()">
+                 Gostaria de se inscrever no nosso NewsLetter?
+             </label>
             </fieldset>
             <fieldset class="faleConosco">
               <legend>Motivo do contato:</legend>
               <label for="motivo">Motivo:</label>
               <select name="selmotivo" id="motivo">
                 <option value="">Escolha</option>
-                <option value="RE">Reclamação</option>
                 <option value="SU">Sugestão</option>
-                <option value="PR">Informação sobre Produtos</option>
               </select>
               <label for="comentario">Comentário:</label>
               <textarea name="txacomentario" id="comentario"></textarea>
-              <button type="reset">Limpar</button><button type="submit">Enviar</button>
+              <button type="reset">Limpar</button><button type="submit" name="submit" disabled>Enviar</button>
             </fieldset>
           </form>
         </section>
