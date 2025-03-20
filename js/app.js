@@ -35,11 +35,11 @@ function validaFaleConosco(){
 
 function enable() {
     var butao = document.getElementById('butao');
-    var submit = document.getElementsByName('submit')[0]; 
+    var submit = document.getElementById('submit'); 
 
     if (butao.checked) {
-      submit.removeAttribute("disabled"); 
+        submit.removeAttribute("disabled"); 
     } else {
-      submit.setAttribute("disabled", "true");
+        submit.setAttribute("disabled", "true");
     }
   }
